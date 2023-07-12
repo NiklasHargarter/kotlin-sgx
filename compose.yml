@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  kotlin:
+    image: enclaive/kotlin-sgx:latest
+    container_name: "kotlin-sgx"
+    build: .
+    devices:
+      - "/dev/sgx/enclave:/dev/sgx/enclave"
+      - "/dev/sgx/enclave:/dev/sgx_enclave"
