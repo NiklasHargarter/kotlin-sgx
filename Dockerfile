@@ -7,7 +7,7 @@ WORKDIR /app
 RUN mvn package && cp /app/target/*.jar /enclave.jar
 
 # Enclave image build stage
-FROM enclaive/gramine-os:jammy-33576d39
+FROM enclaive/gramine-os:latest
 
 RUN apt-get update \
     && apt-get install -y libprotobuf-c1 openjdk-17-jre-headless \
