@@ -119,7 +119,7 @@ Use `docker run hello-world` to check if you can run docker (without sudo).
 <!-- GET THIS IMAGE -->
 ## Get this image (TODO Push Image to Dockerhub)
 
-The recommended way to get the enclaive Ruby-SGX Open Source Docker Image is to pull the prebuilt image from the [Docker Hub Registry](https://hub.docker.com/r/enclaive/kotlin-sgx).
+The recommended way to get the enclaive Kotlin-SGX Open Source Docker Image is to pull the prebuilt image from the [Docker Hub Registry](https://hub.docker.com/r/enclaive/kotlin-sgx).
 
 ```console
 docker pull enclaive/kotlin-sgx:latest
@@ -143,13 +143,13 @@ docker build -t enclaive/kotlin-sgx:latest .
 
 ## Modify the image
 
-Add the Kotlin project to folder `/src` and build the image.
+Add the Kotlin-Maven project to folder `/app/src` and build the image.
 
 <!-- RUN THE IMAGE -->
 ## Run the image
 Run
 ``
-docker compose up -d
+docker compose up
 ``
 to start the enclaved Kotlin application.
 
